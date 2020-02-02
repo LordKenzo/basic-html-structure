@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +8,40 @@
     <title>Lorenzo Franceschini</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <a href="#content" class="skip">Skip to content</a>
     <header>
-        <nav>
+        <img class="logo" src="images/logo.svg" alt="Site Brand showing a Tiger">
+        <nav aria-labelledby="mainmenulabel">
+            <h2 id="mainmenulabel" class="visuallyhidden">Main Menu</h2>
             <ul class="main-nav">
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact Me</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
             </ul>
         </nav>
+        <a href="#" class="contact-button"><button>Contact Me</button></a>
     </header>
+
     <div class="hero">
-        <div class="hero-center">
-            <h1>Some Title here</h1>
-            <button>Call to Action</button>
-        </div>
+        <h1>Some Title here!</h1>
+        <button>Call to Action</button>
     </div>
-    
+
     <main>
-        <article class="main-article">
-            <section class="main-article__section">
+        <article class="main-article" id="content">
+            <section>
                 <h2>Main Article</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam rerum, provident odio aliquam aspernatur asperiores unde. Tenetur molestias veniam perspiciatis dolor minima rerum eos vel quas repudiandae, expedita sint hic?</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta necessitatibus officia, earum non vitae accusantium nisi, similique eum voluptatem harum unde modi in voluptas exercitationem asperiores aperiam animi? Ad, maiores?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam rerum, provident odio aliquam
+                    aspernatur asperiores unde. Tenetur molestias veniam perspiciatis dolor minima rerum eos vel quas
+                    repudiandae, expedita sint hic?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta necessitatibus officia, earum non
+                    vitae accusantium nisi, similique eum voluptatem harum unde modi in voluptas exercitationem
+                    asperiores aperiam animi? Ad, maiores?</p>
             </section>
-            <aside class="main-article__image">
-                <img src="images/aereo.jpeg" alt="Vista da un aereo">
+            <aside>
+                <img src="https://source.unsplash.com/800x200?sky" alt="Vista da un aereo">
             </aside>
         </article>
     </main>
@@ -40,7 +49,8 @@
     <footer>
         <p>Created by Lorenzo Franceschini</p>
         <p>Tweet Me: <a href="https://twitter.com/lorfran" target="_blank">Lorenzo Franceschini</a>.</p>
-      </footer>
+    </footer>
 
 </body>
+
 </html>

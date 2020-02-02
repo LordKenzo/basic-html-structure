@@ -1,5 +1,5 @@
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; /* ora 1rem = 10px */
 }
 body {
     margin: 0;
@@ -21,6 +21,29 @@ img {
     display: none;
 }
 
+.main-article {
+    display: flex;
+    padding: 2rem;
+}
+
+.main-article section {
+    /* flex: 0 0 60%; /* flex-grow, flex-shrink, flex-basis*/
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+    max-width: 85rem; /* non cresce al più di 850px */
+    margin: auto;
+}
+
+.main-article aside {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
+    margin-left: 2rem;
+}
+
+
+
 @media (min-width: 480px) {
     .main-nav {
         display: flex; /* se voglio gli li in colonna è inutile flexbox */
@@ -34,9 +57,16 @@ img {
         background-repeat: no-repeat;
         height: 100vh;
         display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-center {
+        text-align:center;
     }
 
     .hero h1 {
         color: #fff;
+        margin: 0 0 1rem;
     }
 }
